@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather KDMNK</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="search-block">
+            <input type="text" placeholder="Enter the name of the city" class="search">
+            <button type="submit" class="search__btn"><img src="./img/search.svg" alt="search"></button>
+        </form>
+
+        <div class="wrapper">
+            <div class="left-block">
+                <div class="left-block__cards">
+                    <div class="left-block__card">
+                        <div class="left-block__degrees">14°</div>
+                        <img src="img/Clouds.png" alt="cloud" class="weather-icon">
+                        <div class="town">
+                            <p class="text" class=".weather-now__bottom-city" data-city>Aktobe</p>
+                            <img src="./img/like.svg" alt="like" class="like">
+                        </div>
+                    </div>
+                    <div class="left-block__card">
+                        <h2 class="title" data-city>Aktobe</h2>
+                        <ul class="status-list">
+                            <li class="status-list-item">Temperature: 14°</li>
+                            <li class="status-list-item">Feels like: 10°</li>
+                            <li class="status-list-item">Weather: Clouds</li>
+                            <li class="status-list-item">Sunrise: 03:21</li>
+                            <li class="status-list-item">Sunset: 18:54</li>
+                        </ul>
+                    </div>
+                    <div class="left-block__card">
+                        <h2 class="title title3" data-city>Aktobe</h2>
+                        <div class="weather-items">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="left-block__buttons">
+                    <button class="left-block__button">Now</button>
+                    <button class="left-block__button">Details</button>
+                    <button class="left-block__button">Forecast</button>
+                </div>
+            </div>
+
+            <div class="right-block">
+                <h1 class="title">Added Locations:</h1>
+                <ul class="town-list"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
